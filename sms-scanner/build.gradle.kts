@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.qbit.direct.sms_scanner"
+    namespace = "com.qbit.direct.com.qbit.direct.sms_scanner"
     compileSdk = 21
 
     defaultConfig {
-        applicationId = "com.qbit.direct.sms_scanner"
+        applicationId = "com.qbit.direct.com.qbit.direct.sms_scanner"
         minSdk = 21
         targetSdk = 35
         versionCode = 1
