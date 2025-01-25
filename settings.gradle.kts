@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "QBiT SMS Collector Agent A1"
 include(":app")
+include(":sms-scanner")
