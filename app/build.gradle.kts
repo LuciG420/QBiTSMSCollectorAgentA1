@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.qbit.direct.qbitsmscollectoragentv1"
-    compileSdk = 21
+    compileSdk = 35
 
     externalNativeBuild {
         cmake {

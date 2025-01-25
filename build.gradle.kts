@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.qbit.direct.qbitsmscollectoragentv1"
-    compileSdkVersion = "android-31"
+    compileSdk = 35
     //minSdk = 21
     // ... other settings
     defaultConfig {
