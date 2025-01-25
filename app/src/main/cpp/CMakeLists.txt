@@ -7,7 +7,7 @@ set(CMAKE_ANDROID_API 21)
 
 # Define the nats_client library
 add_library(native-lib nats_client SHARED IMPORTED)
-add_library(nats_client SHARED app/src/main/cpp/nats_client.cpp)
+add_library(nats_client SHARED app/src/lib.rs)
 
 # Set properties for the nats_client library (if needed)
 set_target_properties(nats_client PROPERTIES
