@@ -1,4 +1,4 @@
-package com.example.qbitsmscollectoragenta1
+package com.qbit.direct.qbitsmscollectoragentv1
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.qbitsmscollectoragenta1", appContext.packageName)
+        assertEquals("com.qbit.direct.qbitsmscollectoragenta1", appContext.packageName)
     }
 }

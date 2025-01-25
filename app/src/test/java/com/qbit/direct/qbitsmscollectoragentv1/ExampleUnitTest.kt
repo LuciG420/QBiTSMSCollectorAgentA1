@@ -1,4 +1,4 @@
-package com.example.qbitsmscollectoragenta1
+package com.qbit.direct.qbitsmscollectoragentv1
 
 import org.junit.Test
 

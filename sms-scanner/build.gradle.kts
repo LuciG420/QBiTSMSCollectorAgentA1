@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.jjventures.sms_scanner"
+    namespace = "com.qbit.direct.sms_scanner"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.jjventures.sms_scanner"
+        applicationId = "com.qbit.direct.sms_scanner"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -33,6 +33,8 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildToolsVersion = "35.0.1"
+    ndkVersion = "27.0.12077973"
 }
 
 dependencies {

@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.qbitsmscollectoragenta1"
+    namespace = "com.qbit.direct.qbitsmscollectoragenta1"
     compileSdk = 35
     externalNativeBuild {
         cmake {
@@ -14,11 +14,24 @@ android {
             version = "3.10.2"
         }
     }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+    dependenciesInfo {
+        includeInApk = true
+        includeInBundle = true
+    }
+    buildToolsVersion = "35.0.1"
+    ndkVersion = "27.0.12077973"
 }
 
 dependencies {
     // ... other dependencies ...
     //androidx.media3:media3-exoplayer:1.5.1
     implementation("androidx.media3:media3-exoplayer:1.5.1")
-
+    implementation("com.google.android.gms:play-services-ads:23.6.0")
 }

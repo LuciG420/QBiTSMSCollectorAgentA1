@@ -1,4 +1,4 @@
-package com.example.qbitsmscollectoragenta1.ui.theme
+package com.qbit.direct.qbitsmscollectoragentv1.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
