@@ -43,8 +43,14 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
     buildToolsVersion = "35.0.1"
+    dependenciesInfo {
+        includeInApk = true
+        includeInBundle = true
+    }
+    ndkVersion = "27.0.12077973"
 }
 
 dependencies {

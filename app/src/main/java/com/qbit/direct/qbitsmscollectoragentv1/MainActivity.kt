@@ -13,9 +13,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.qbit.direct.qbitsmscollectoragentv1.ui.theme.QBiTSMSCollectorAgentA1Theme
 
-static {
-    System.loadLibrary("nats_client");
-}
+//static {
+//    System.loadLibrary("nats_client");
+//}
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
