@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.qbit.direct.qbitsmscollectoragentv1"
-    compileSdk = 35
+    compileSdk = 21
 
     externalNativeBuild {
         cmake {
@@ -64,6 +64,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.play.services.ads.lite)
+    implementation(libs.play.services.measurement.api)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

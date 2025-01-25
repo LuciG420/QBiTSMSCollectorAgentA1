@@ -14,14 +14,19 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.google.android.gms.ads.MobileAds
+import com.google.firebase.Firebase
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.analytics
 import com.qbit.direct.qbitsmscollectoragentv1.ui.theme.QBiTSMSCollectorAgentA1Theme
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-//static {
-//    System.loadLibrary("nats_client");
-//}
+static {
+    System.loadLibrary("nats_client")
+}
+
+private lateinit var firebaseAnalytics: FirebaseAnalytics
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,10 +37,12 @@ class MainActivity : ComponentActivity() {
             return
         }
 
+        // Obtain the FirebaseAnalytics instance.
+        firebaseAnalytics = Firebase.analytics
         intent?.getStringExtra("composable")?.let { setComposableContent(it) }
     }
 
-    protected override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {

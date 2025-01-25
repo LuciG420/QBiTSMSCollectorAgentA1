@@ -7,7 +7,15 @@ plugins {
 
 android {
     namespace = "com.qbit.direct.qbitsmscollectoragentv1"
-    compileSdk = 34
+    compileSdkVersion = "android-31"
+    //minSdk = 21
+    // ... other settings
+    defaultConfig {
+        // ... other settings
+        minSdk = 21
+        // ... other settings
+    }
+    // ... other settings
     externalNativeBuild {
         cmake {
             path = file("app/src/main/cpp/CMakeLists.txt")
@@ -28,7 +36,7 @@ android {
     }
     buildToolsVersion = "35.0.1"
     ndkVersion = "27.0.12077973"
-    //android.ndk.suppressMinSdkVersionError=21
+
 }
 
 dependencies {
