@@ -6,17 +6,18 @@ plugins {
 }
 
 android {
-    namespace = "com.qbit.direct.qbitsmscollectoragenta1"
-    compileSdk = 35
+    namespace = "com.qbit.direct.qbitsmscollectoragentv1"
+    compileSdk = 34
     externalNativeBuild {
         cmake {
-            path = file("src/main/cpp/CMakeLists.txt")
-            version = "3.10.2"
+            path = file("app/src/main/cpp/CMakeLists.txt")
+            version = "3.31.5"
         }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+
     }
     buildFeatures {
         viewBinding = true
@@ -27,6 +28,7 @@ android {
     }
     buildToolsVersion = "35.0.1"
     ndkVersion = "27.0.12077973"
+    //android.ndk.suppressMinSdkVersionError=21
 }
 
 dependencies {
