@@ -22,10 +22,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-static {
-    System.loadLibrary("nats_client")
-}
-
 private lateinit var firebaseAnalytics: FirebaseAnalytics
 
 class MainActivity : ComponentActivity() {
@@ -45,6 +41,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        System.loadLibrary("nats_client")
+
         setContent {
             QBiTSMSCollectorAgentA1Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
