@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "656237623461",
+    "project_id": "qbit-foundation-ai-app",
+    "storage_bucket": "qbit-foundation-ai-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656237623461:android:641dbf3a8981e91904b54c",
+        "android_client_info": {
+          "package_name": "com.qbit.direct.smscollectorsensor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP3nKTf0JwwJuXf31l5vmQZj7sxJKpHvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,11 +8,17 @@ plugins {
 android {
     namespace = "com.example.qbitsmscollectoragenta1"
     compileSdk = 35
+    externalNativeBuild {
+        cmake {
+            path = file("src/main/cpp/CMakeLists.txt")
+            version = "3.10.2"
+        }
+    }
 }
 
 dependencies {
     // ... other dependencies ...
     //androidx.media3:media3-exoplayer:1.5.1
-    implementation("androidx.media3:media3-exoplayer:1.5.0")
+    implementation("androidx.media3:media3-exoplayer:1.5.1")
 
 }
